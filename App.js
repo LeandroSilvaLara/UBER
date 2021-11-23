@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet , Text, View } from "react-native";
 import { Provider } from "react-redux";
-import HomeScrreen from "./screens/HomeScrreen";
+import HomeScreen from "./screens/HomeScreen";
 import MapScreen from "./screens/MapScreen";
 import { store } from "./store";
 import { SafeAreaProvider } from "react-native-safe-area-context";
@@ -19,7 +19,7 @@ export default function App() {
             <stack.Navigator>
               <stack.Screen 
                 name='HomeScreen'
-                component={HomeScrreen}
+                component={HomeScreen}
                 Options={{
                   headerShown: false,
                 }}
@@ -38,11 +38,3 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
